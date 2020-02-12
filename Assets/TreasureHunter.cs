@@ -6,20 +6,23 @@ public class TreasureHunter : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Inventory iv; 
+    
 
     public TextMesh text1; 
 
-    public TextMesh test2; 
+    public TextMesh text2; 
 
-
-    public GameObject treasure1;
-    public GameObject treasure2; 
-    public GameObject treasure3; 
+    public TextMesh text3;
 
     public Inventory myInventory; 
 
     List<GameObject> myList ; 
+
+    public Camera mainCam; 
+
+    private int scoreCounter = 0; 
+
+    private int numItems = 0; 
 
 
     void Start()
@@ -32,37 +35,72 @@ public class TreasureHunter : MonoBehaviour
     {
         
         
-        if (Input.GetKeyDown("1"))
+        if(Input.GetMouseButtonDown(0)){
+
+
+
+            
+        RaycastHit hit;
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit))
         {
-            if(!myList.Contains(treasure1)){
-                myList.Add(treasure1);
+            if(hit.collider.gameObject.name.Contains("Sphere")){
+                numItems++; 
+
+                text1.text = "Num Items: " + numItems; 
+
+                scoreCounter = scoreCounter + hit.collider.gameObject.GetComponent<Score>().points; 
+
+                text2.text = "Score: " + scoreCounter;
+
+                Debug.Log(hit.collider.gameObject.GetComponent<Score>().prefabName);
+
+                myInventory.list.Add(Resources.Load(hit.collider.gameObject.GetComponent<Score>().prefabName, typeof(GameObject)) as GameObject);
+
+                text3.text = "I have Collected: " + hit.collider.gameObject.name;
+
+                Destroy(hit.collider.gameObject);
+
+            }
+
+            if(hit.collider.gameObject.name.Contains("Cube")){
+                numItems++; 
+
+                text1.text = "Num Items: " + numItems; 
+
+                scoreCounter = scoreCounter + hit.collider.gameObject.GetComponent<Score>().points; 
+
+                text2.text = "Score: " + scoreCounter;
+
+                Debug.Log(hit.collider.gameObject.GetComponent<Score>().prefabName);
+
+                myInventory.list.Add(Resources.Load(hit.collider.gameObject.GetComponent<Score>().prefabName, typeof(GameObject)) as GameObject);
+
+                text3.text = "I have Collected: " + hit.collider.gameObject.name;
+
+                Destroy(hit.collider.gameObject);
+            }
+
+            if(hit.collider.gameObject.name.Contains("Capsule")){
+ numItems++; 
+
+                text1.text = "Num Items: " + numItems; 
+
+                scoreCounter = scoreCounter + hit.collider.gameObject.GetComponent<Score>().points; 
+
+                text2.text = "Score: " + scoreCounter;
+
+                Debug.Log(hit.collider.gameObject.GetComponent<Score>().prefabName);
+
+                myInventory.list.Add(Resources.Load(hit.collider.gameObject.GetComponent<Score>().prefabName, typeof(GameObject)) as GameObject);
+
+                text3.text = "I have Collected: " + hit.collider.gameObject.name;
+
+                Destroy(hit.collider.gameObject);
             }
         }
 
-        if (Input.GetKeyDown("2"))
-        {
-             if(!myList.Contains(treasure2)){
-                myList.Add(treasure2);
-            }
-        }
 
-        if (Input.GetKeyDown("3"))
-        {
-             if(!myList.Contains(treasure3)){
-                myList.Add(treasure3);
-            }
-        }
-
-        if (Input.GetKeyDown("4"))
-        {
-            int score = 0; 
-            foreach(GameObject treasure in myList)
-            {  
-               score += treasure.GetComponent<Score>().points; 
-               test2.text += " " + treasure.name; 
-            }
-
-            test2.text += " Score is: " + score; 
         }
     }
 }
