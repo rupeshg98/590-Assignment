@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5F4006AA-AA20-D978-822D-01960B3C148D}</ProjectGuid>
+    <ProjectGuid>{3A6E5BC5-0E68-4794-4C11-976010B6397F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -74,37 +74,37 @@
      <Compile Include="Assets\Oculus\Spatializer\editor\ONSPPropagationSerializationManager.cs" />
      <Compile Include="Assets\Oculus\Spatializer\editor\ONSPReflectionCustomGUI.cs" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -302,7 +302,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/gudip/Desktop/590-Assignment-1/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/gudip/Desktop/590/590-Rupesh-Ram/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -661,19 +661,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{CCA0DA69-1F1B-3D4C-22CC-C59F4846DB4C}</Project>
+      <Project>{81860197-0260-C757-173B-7186C044D4C7}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{D75E76B1-5D80-09E9-1AB8-683630217D14}</Project>
+      <Project>{4D2C469C-C2B2-EC18-FD95-ACE6556705BD}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{968D022B-2A56-2059-2191-B84A5691D2F5}</Project>
+      <Project>{43CBA7C2-DCC1-038B-8940-3D96B56D1EE6}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{C84C2CBE-BD0B-D68B-82A8-B3D50A336F61}</Project>
+      <Project>{4065C44A-7340-1256-0F35-0131F42B4B66}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
   </ItemGroup>
